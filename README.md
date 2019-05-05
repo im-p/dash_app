@@ -24,7 +24,7 @@
 - pip freeze > requirements.txt
 
 #### add Procfile:
-web: gunicorn app:server
+- web: gunicorn app:server
 
 #### add runtime.txt:
 - python-3.7.3
