@@ -10,9 +10,8 @@ warnings.filterwarnings("ignore")
 
 #vpk_mittaus = pd.read_csv("vpk_mittauspaikat.csv")
 #virtaama_mittaus = pd.read_csv("virtaama_mittauspaikat.csv")
-
-vpk = pd.read_csv("https://raw.githubusercontent.com/im-p/test/master/vpk_mittaukset.csv")
-virtaama = pd.read_csv("https://raw.githubusercontent.com/im-p/test/master/virtaama_mittaukset.csv")
+vpk = pd.read_csv("https://raw.githubusercontent.com/im-p/dash_app/master/vpk_mittaukset.csv")
+virtaama = pd.read_csv("https://raw.githubusercontent.com/im-p/dash_app/master/virtaama_mittaukset.csv")
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(external_stylesheets=external_stylesheets)
