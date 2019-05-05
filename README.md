@@ -47,3 +47,12 @@
 - heroku ps:scale web=1
 - heroku ps:scale web=0
 
+## Heroku:
+
+### clone the repository:
+- heroku login
+- heroku git:clone -a hydrologiset-havainnot
+ ### deploy changes:
+- git add .
+- git commit -am "make it better"
+- git push heroku master
