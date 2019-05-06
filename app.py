@@ -1,3 +1,4 @@
+import os
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -8,15 +9,15 @@ from fbprophet import Prophet
 import warnings
 warnings.filterwarnings("ignore")
 
-#vpk_mittaus = pd.read_csv("vpk_mittauspaikat.csv")
-#virtaama_mittaus = pd.read_csv("virtaama_mittauspaikat.csv")
+vpk_mittaus = pd.read_csv("https://raw.githubusercontent.com/im-p/dash_app/master/vpk_mittauspaikat.csv")
+virtaama_mittaus = pd.read_csv("https://raw.githubusercontent.com/im-p/dash_app/master/virtaama_mittauspaikat.csv")
+
 vpk = pd.read_csv("https://raw.githubusercontent.com/im-p/dash_app/master/vpk_mittaukset.csv")
 virtaama = pd.read_csv("https://raw.githubusercontent.com/im-p/dash_app/master/virtaama_mittaukset.csv")
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(external_stylesheets=external_stylesheets)
 app.title = "Hydroligiset havainnot"
-
 server = app.server
 
 #-------------------------------plots layout--------------------------------------------------#
@@ -47,7 +48,7 @@ all_options = {
 }
 
 #-------------------------------map--------------------------------------------------#
-"""
+
 def map_trace(dataframe, value):
     df = dataframe
     trace = dict(
@@ -91,7 +92,7 @@ def mapbox(value):
             r = 30,
         ),
         mapbox = dict(
-            accesstoken = "pk.eyJ1IjoiaWlnb3IiLCJhIjoiY2p1dHJlZmZmMGE1dzN6cGlvZXI5aXNtbiJ9.GR6TYsf5at0qVN03vF4HQQ",
+            accesstoken = "pk.eyJ1IjoiaWlnb3IiLCJhIjoiY2p2YzEwNjJvMDZoNTN6cHVjdW85NHRubyJ9.6n7u63nHJzmFUrmdsz0jJQ",
             center = dict(
                 lat = 64.8,
                 lon = 25.72088
@@ -104,7 +105,7 @@ def mapbox(value):
     figure = dict(data = traces, layout = layout)
     
     return figure
-""" 
+    
 #-------------------------------observation plot--------------------------------------------------#
     
 def plot_trace_y2(dataframe, city):
@@ -324,11 +325,10 @@ app.layout = html.Div([
 def update_dropdown(selected):
     return [{"label": i, "value": i} for i in all_options[selected]] 
 #------------------------------map---------------------------------------------------# 
-"""
 @app.callback(
     Output("my-map", "figure"),
     [Input("Radio", "value")])
-"""
+
 def update_map(value):
     return mapbox(value)
 #----------------------------------plot-----------------------------------------------#
@@ -349,4 +349,4 @@ def update_prediction_plot(Radio_selection, Dropdown_selection):
     return prediction_plot(Radio_selection, Dropdown_selection)
 
 if __name__ == "__main__":
-    app.run_server()
+    app.run_server(port = 8888)
