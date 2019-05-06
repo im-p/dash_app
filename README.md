@@ -57,3 +57,6 @@ Dash application in virtual environment and heroku cloud
 - git add .
 - git commit -am "make it better"
 - git push heroku master
+
+
+app in: https://hydrologiset-havainnot.herokuapp.com/
