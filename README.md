@@ -61,6 +61,3 @@ app in: https://hydrologiset-havainnot.herokuapp.com/
 - git add .
 - git commit -am "make it better"
 - git push heroku master
-
-
-app in: https://hydrologiset-havainnot.herokuapp.com/
