@@ -1,6 +1,6 @@
 # dash_app
 
-![https://github.com/im-p/dash_app/blob/master/app.gif]
+![](https://github.com/im-p/dash_app/blob/master/app.gif)
 
 
 
