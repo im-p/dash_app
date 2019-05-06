@@ -6,6 +6,7 @@ this app is a prototype so it is not finished
 
 app in: https://hydrologiset-havainnot.herokuapp.com/
 
+* vedenpinnan korkeys: [https://www.ymparisto.fi/fi-FI](rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.0)
 
 ## Dash application deployment isntructions to heroku cloud:
 
