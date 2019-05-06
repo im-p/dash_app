@@ -92,7 +92,7 @@ def mapbox(value):
             r = 30,
         ),
         mapbox = dict(
-            accesstoken = "pk.eyJ1IjoiaWlnb3IiLCJhIjoiY2p2YzEwNjJvMDZoNTN6cHVjdW85NHRubyJ9.6n7u63nHJzmFUrmdsz0jJQ",
+            accesstoken = "pk.eyJ1IjoiaWlnb3IiLCJhIjoiY2p2YzdibWF6MWZmdDQwcGZzdWQzMm82MSJ9.stjuRT1lrNs2AUmgf3A69Q",
             center = dict(
                 lat = 64.8,
                 lon = 25.72088
