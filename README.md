@@ -3,6 +3,8 @@
 ![](https://github.com/im-p/dash_app/blob/master/app.gif)
 
 
+app in: https://hydrologiset-havainnot.herokuapp.com/
+
 
 ## Dash application in virtual environment and heroku cloud instructions:
 
