@@ -6,7 +6,7 @@
 app in: https://hydrologiset-havainnot.herokuapp.com/
 
 
-## Dash application in virtual environment and heroku cloud instructions:
+## Dash application, virtual environment and heroku cloud instructions:
 
 #### create virtualenv:
 - virtualenv -p python3 env
