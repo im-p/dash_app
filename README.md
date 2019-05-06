@@ -2,6 +2,7 @@
 
 ![](https://github.com/im-p/dash_app/blob/master/app.gif)
 
+this app is a prototype so it is not finished
 
 app in: https://hydrologiset-havainnot.herokuapp.com/
 
