@@ -1,8 +1,10 @@
 # dash_app
 
-Dash application in virtual environment and heroku cloud
+![https://github.com/im-p/dash_app/blob/master/app.gif]
 
-## instructions:
+
+
+## Dash application in virtual environment and heroku cloud instructions:
 
 #### create virtualenv:
 - virtualenv -p python3 env
